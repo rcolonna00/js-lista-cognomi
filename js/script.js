@@ -37,4 +37,4 @@ for( var i = 0; i < arrayCognomi.length; i++ ) {
     }
 }
 
-alert('Questa è la posizione del tuo cognome ' + posizioneCognomeUtente + '.' + cognomeUtente);
+alert('Questa è la posizione del tuo cognome ' + posizioneCognomeUtente + '°.' + cognomeUtente);
