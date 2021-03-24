@@ -10,7 +10,7 @@ var arrayCognomi = [
 
 // chiedo il cognome utente e lo ripeto finche sia diverso da 0
 var cognomeUtente = prompt( 'Dimmi il tuo cognome' );
-console.log(cognomeUtente);
+//console.log(cognomeUtente);
 
 while ( cognomeUtente.length == 0 ) {
     console.log(cognomeUtente);
