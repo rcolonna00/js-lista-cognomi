@@ -8,19 +8,33 @@ var arrayCognomi = [
 ]
 //console.log(arrayCognomi);
 
-// chiedo il nume utente e lo ripeto finche sia diverso da 0
-var nomeUtente = prompt( 'Dimmi il tuo nome' );
-console.log(nomeUtente);
+// chiedo il cognome utente e lo ripeto finche sia diverso da 0
+var cognomeUtente = prompt( 'Dimmi il tuo cognome' );
+console.log(cognomeUtente);
 
-while ( nomeUtente.length == 0 ) {
-    console.log(nomeUtente);
-    nomeUtente = prompt("Non lasciarlo vuoto, dimmi il tuo nome");
+while ( cognomeUtente.length == 0 ) {
+    console.log(cognomeUtente);
+    cognomeUtente = prompt("Non lasciarlo vuoto, dimmi il tuo nome");
 }
 
-arrayCognomi.push( nomeUtente );
+arrayCognomi.push( cognomeUtente );
 console.log(arrayCognomi);
 
-// metto in ordine alfabetico l'arrey iniziale con il nome utente
+// metto in ordine alfabetico l'arrey iniziale con il cognome utente
 arrayCognomi.sort();
 console.log(arrayCognomi);
 
+alert(arrayCognomi );
+
+//stampo cognome con rispettiva posizione
+var posizioneCognomeUtente = -1;
+
+for( var i = 0; i < arrayCognomi.length; i++ ) {
+    var thisPosizione = arrayCognomi[i];
+
+    if ( thisPosizione == cognomeUtente ){
+        posizioneCognomeUtente = i+1 ;
+    }
+}
+
+alert('Questa è la posizione del tuo cognome ' + posizioneCognomeUtente + '.' + cognomeUtente);
