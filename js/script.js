@@ -14,7 +14,7 @@ console.log(cognomeUtente);
 
 while ( cognomeUtente.length == 0 ) {
     console.log(cognomeUtente);
-    cognomeUtente = prompt("Non lasciarlo vuoto, dimmi il tuo nome");
+    cognomeUtente = prompt("Non lasciarlo vuoto, dimmi il tuo cognome");
 }
 
 arrayCognomi.push( cognomeUtente );
@@ -29,12 +29,23 @@ alert(arrayCognomi );
 //stampo cognome con rispettiva posizione
 var posizioneCognomeUtente = -1;
 
-for( var i = 0; i < arrayCognomi.length; i++ ) {
+// for( var i = 0; i < arrayCognomi.length; i++ ) {
+//     var thisPosizione = arrayCognomi[i];
+
+//     if ( thisPosizione == cognomeUtente ){
+//         posizioneCognomeUtente = i+1 ;
+//     }
+// }
+
+var i = 0;
+while (posizioneCognomeUtente == -1){
     var thisPosizione = arrayCognomi[i];
 
-    if ( thisPosizione == cognomeUtente ){
-        posizioneCognomeUtente = i+1 ;
+     if ( thisPosizione == cognomeUtente ){
+         posizioneCognomeUtente = i+1 ;
     }
+
+    i++;
 }
 
 alert('Questa è la posizione del tuo cognome ' + posizioneCognomeUtente + '°.' + cognomeUtente);
